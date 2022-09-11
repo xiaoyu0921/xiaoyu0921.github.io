@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>人工智能应用技术国家民委办重点实验室</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="../../css/tales.css" />
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<script>
+		        $(function () {
+		            dropdownOpen();
+		
+		        });
+		
+		        function dropdownOpen(){
+		            $('.dropdown').mouseover(function(){
+		                $(this).addClass('show');
+		                //查找当前元素子节点中的对象，修改其class，这样
+		                //这样当有多个下拉菜单时，可以分别独立处理，而不会出现都下拉的bug
+		                $(this).find(".dropdown-menu").addClass('show');
+		
+		            }).mouseout(function(){
+		
+		                $(this).find(".dropdown-menu").removeClass('show');
+		                $(this).removeClass('show');
+		            });
+		        }
+		</script>
+		
+	</head>
+	<style>
+		.container{
+			padding: 5px;
+		}
+		.navbar{
+			padding-left: 15px ;
+		    margin-bottom: 0px;
+		    border-radius: 5px;
+			text-align: center;
+		} 
+		.navbar .nav >li{
+			width: 110px;
+		}
+
+		.navbar .nav >li >a:visited{
+		    color: aqua;
+		    background-color: #000000;
+		}
+		.navbar .nav > li > a:hover {
+		    color: aqua;
+		    background-color: #1d4b7a;
+		}
+		
+		.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+		    background-color: transparent;
+		}
+		
+		.navbtn{
+			margin-top: 4px;
+			color: #707070;;
+			height:transparent;
+			width: 55px;
+			align-content: center;
+			background-color: transparent;
+			font-size: smaller;
+		}
+		
+		.group-title{
+			background-color: #e1e1e1; 
+			margin:0px
+		}
+		.label{
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 7px;
+			padding-top: 7px;
+			height: transparent;
+			background-color:#1d4564;
+			font-size: small;
+			border-radius: 20;
+		}
+		.more{
+			color: #707070;
+		}
+		a{text-decoration:none;color: #000000;}
+		
+		a:hover{text-decoration:none;color: #000000;} 
+	</style>
+	
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>	国家民委办人工智能应用技术实验室</h1>
+				<small>The key Laboratory of Artificial Intelligence Application Technology of State Ethnic Affairs Comission</small>
+			</div>
+			
+			<!-- 导航栏 -->
+			<nav class="navbar navbar-default" role="navigation" style="background-color: #1d4564;>
+				
+				<div class="container-fluid"> 
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							
+							<!-- 首页 -->
+							<li><a href="../main.html" style="color: #ffffff">网站首页</a></li>
+												
+							<!-- 实验室概况 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									实验室概况
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../lab/lab-introduce.html" style="padding: 4px 10px 4px 10px;">实验室介绍</a></li>
+									<li><a href="../lab/scholarship-committee.html" style="padding: 4px 10px 4px 10px;">学术委员会</a></li>
+									<li><a href="../lab/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室领导</a></li>
+									<li><a href="../lab/research-content.html" style="padding: 4px 10px 4px 10px;">研究内容</a></li>
+									<li><a href="../lab/research-group.html" style="padding: 4px 10px 4px 10px;">研究队伍</a></li>
+									<li><a href="../lab/organize.html" style="padding: 4px 10px 4px 10px;">组织机构</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../yjfx/research-direction.html" style="color: #ffffff">研究方向</a></li>
+							<li><a href="../project/project.html" style="color: #ffffff">承担项目</a></li>
+							
+							<li class="dropdown">
+								<a href="../kycg/competion-result.html" data-toggle="dropdown" style="color: #ffffff">
+									科研成果
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../kycg/competion-result.html" style="padding: 4px 10px 4px 10px;">竞赛获奖</a></li>
+									<li><a href="../kycg/research-result.html" style="padding: 4px 10px 4px 10px;">科研获奖</a></li>
+								</ul>
+							</li>
+							
+							<!-- 学术交流 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									学术交流
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../xsjl/academic-conferences.html" style="padding: 4px 10px 4px 10px;">学术会议</a></li>
+									<li><a href="../xsjl/academic-reports.html" style="padding: 4px 10px 4px 10px;">学术报告</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../kfjj/open-fund.html" style="color: #ffffff">开放基金</a></li>
+							
+							<!-- 人才培养 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									人才培养
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../rcpy/teacher.html" style="padding: 4px 10px 4px 10px;">导师名单</a></li>
+								</ul>
+							</li>
+														
+							<!-- 规章制度 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									规章制度
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../gzzd/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室守则</a></li>
+									<li><a href="../gzzd/safe-manager.html" style="padding: 4px 10px 4px 10px;">安全制度</a></li>
+									<li><a href="../gzzd/device-manager.html" style="padding: 4px 10px 4px 10px;">仪器设备管理制度</a></li>
+									<li><a href="../gzzd/state-manager.html" style="padding: 4px 10px 4px 10px;">平台管理制度</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../download/download.html" style="color: #ffffff">下载中心</a></li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</nav>
+					
+		</div>
+		
+		<div class="container">
+			<div class="col-md-3">
+				<div class="row">
+					<h5>
+						<div class="page-header" style="margin-top:5px; margin-left:15px;margin-bottom:0px">
+							<span class="glyphicon glyphicon-tag" aria-hidden="true" style="color:#1f4563"></span>
+							<span class="label" style="background-color: #ffffff;color:#1f4563;font-size:15px">
+								科研成果
+							</span>
+						</div>
+			
+					</h5>
+				</div>
+			
+				<ul class="nav nav-tab vertical-tab" role="tablist" id="vtab">
+					<li role="presentation" class="active">
+						<a href="competion-result.html">竞赛成果</a>
+					</li>
+					<li role="presentation">
+						<a href="research-result.html">科研成果</a>
+					</li>
+				</ul>
+			</div>
+				
+			<div class="col-md-8" style="margin-left:15px">
+				<h5>
+					<div class="page-header" style="margin-top:5px; margin-left:15px;margin-bottom:0px">
+						<span class="label" style="background-color: #ffffff;color:#1f4563;font-size:15px">
+							竞赛成果
+						</span>
+					</div>
+				</h5>
+				
+				<p style="text-align: center; padding:10px; font-size:16px">
+					<strong>竞赛成果</strong>
+				</p>
+			
+				<div class="table-responsive">
+					<table class="table table-bordered " style="text-align: center">
+						<thead>
+							<tr style="text-align: center; font-size:15px; width:100%">
+								<th style="width:10%;text-align: center"><strong>序号</strong></th>
+								<th style="text-align: center"><strong>获奖项目名称</strong></th>
+								<th style=";text-align: center"><strong>完成人</strong></th>
+								<th style="text-align: center"><strong>指导教师</strong></th>
+								<th style="width:10%;text-align: center"><strong>完成单位</strong></th>
+								<th style="text-align: center"><strong>获奖</strong></th>
+								<th style="width:10%;text-align: center"><strong>获奖等级</strong></th>
+								<th style="text-align: center"><strong>获奖时间</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>《青力倾为-打造青海非遗品牌标杆带动农村精准扶贫》</td>
+								<td>盛磊，任景龙，朱熠，成来卓码，尹富华，卓玛措，桑梅，扎西措毛，刘进进</td>
+								<td>彭英杰，魏建国</td>
+								<td>青海民族大学</td>
+								<td>第六届中国国际“互联网+”大学生创新创业大赛（青海赛区）青年红色筑梦之旅赛道</td>
+								<td>金奖</td>
+								<td>2020年9月</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>《“智”存高原，大“AI”无疆—智能教学机器人服务民族地区基础教育》</td>
+								<td>何欣，徐溯，马萍，康主次力</td>
+								<td>魏建国，孙琦龙，叶涛，彭英杰</td>
+								<td>青海民族大学</td>
+								<td>第六届中国国际“互联网+”大学生创新创业大赛（青海赛区）青年红色筑梦之旅赛道</td>
+								<td>银奖</td>
+								<td>2020年9月</td>
+							</tr>
+							<!-- <tr>
+								<td>3</td>
+								<td></td>
+								<td>尕藏杰，公保太，卓改措，曼拉才让，角巴东主</td>
+								<td>彭英杰，才让三周</td>
+								<td>青海民族大学</td>
+								<td>第十二届中国大学生服务外包创新创业大赛</td>
+								<td>创业实践类二等奖</td>
+								<td>2021年8月</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td></td>
+								<td>马莉，马青山，马芬莉，马占文</td>
+								<td>彭英杰</td>
+								<td>青海民族大学</td>
+								<td>第十一届全国大学生电子商务“创新、创意及创业”挑战赛青海赛区省级选拔赛</td>
+								<td>三等奖</td>
+								<td>2021年8月</td>
+							</tr> -->
+							<tr>
+								<td>3</td>
+								<td></td>
+								<td>余量</td>
+								<td></td>
+								<td>青海民族大学</td>
+								<td>第十二届蓝桥杯全国软件和信息技术专业人才大赛青海赛区C/C++程序设计大学B组</td>
+								<td>一等奖</td>
+								<td>2021年5月</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td></td>
+								<td>吕鑫彤</td>
+								<td></td>
+								<td>青海民族大学</td>
+								<td>第十二届蓝桥杯全国软件和信息技术专业人才大赛青海赛区C/C++程序设计大学B组</td>
+								<td>二等奖</td>
+								<td>2021年5月</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td></td>
+								<td>张雨</td>
+								<td></td>
+								<td>青海民族大学</td>
+								<td>第十二届蓝桥杯全国软件和信息技术专业人才大赛青海赛区C/C++程序设计大学B组</td>
+								<td>二等奖</td>
+								<td>2021年5月</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td></td>
+								<td>王雨欣</td>
+								<td></td>
+								<td>青海民族大学</td>
+								<td>第十二届蓝桥杯全国软件和信息技术专业人才大赛青海赛区C/C++程序设计大学B组</td>
+								<td>三等奖</td>
+								<td>2021年5月</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+	
+		</div>
+		<footer class="footer text-center" style="margin-top:10px">
+		    <div class="container" style="height: 110px;padding:5px; background-color:#1f4563;color:#ffffff">
+				<div class="row">
+					<h5>电话：0971-8804033</h5>
+				</div>
+				<div class="row" >
+					<h5>地址：青海省西宁市城东区博雅路青海民族大学工科校区工学主楼</h5>
+				</div>
+				<div class="row" >
+					<h5>邮编：810007</h5>
+				</div>
+			</div>
+			<div class="container">
+				<h5>Copyright @ XX-XX XXXX</h5>
+			</div>
+		</footer>
+	</body>
+
+</html>
+
+

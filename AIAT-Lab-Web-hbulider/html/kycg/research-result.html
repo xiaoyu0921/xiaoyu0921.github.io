@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>人工智能应用技术国家民委办重点实验室</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="../../css/tales.css" />
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<script>
+		        $(function () {
+		            dropdownOpen();
+		
+		        });
+		
+		        function dropdownOpen(){
+		            $('.dropdown').mouseover(function(){
+		                $(this).addClass('show');
+		                //查找当前元素子节点中的对象，修改其class，这样
+		                //这样当有多个下拉菜单时，可以分别独立处理，而不会出现都下拉的bug
+		                $(this).find(".dropdown-menu").addClass('show');
+		
+		            }).mouseout(function(){
+		
+		                $(this).find(".dropdown-menu").removeClass('show');
+		                $(this).removeClass('show');
+		            });
+		        }
+		</script>
+		
+	</head>
+	<style>
+		.container{
+			padding: 5px;
+		}
+		.navbar{
+			padding-left: 15px ;
+		    margin-bottom: 0px;
+		    border-radius: 5px;
+			text-align: center;
+		} 
+		.navbar .nav >li{
+			width: 110px;
+		}
+		.navbar .nav >li >a:visited{
+		    color: aqua;
+		    background-color: #000000;
+		}
+		.navbar .nav > li > a:hover {
+		    color: aqua;
+		    background-color: #1d4b7a;
+		}
+		
+		.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+		    background-color: transparent;
+		}
+		
+		.navbtn{
+			margin-top: 4px;
+			color: #707070;;
+			height:transparent;
+			width: 55px;
+			align-content: center;
+			background-color: transparent;
+			font-size: smaller;
+		}
+		
+		.group-title{
+			background-color: #e1e1e1; 
+			margin:0px
+		}
+		
+		.label{
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 7px;
+			padding-top: 7px;
+			height: transparent;
+			background-color:#1d4564;
+			font-size: small;
+			border-radius: 20;
+		}
+		.more{
+			color: #707070;
+		}
+		a{text-decoration:none;color: #000000;}
+		
+		a:hover{text-decoration:none;color: #000000;} 
+	</style>
+	
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>	国家民委办人工智能应用技术实验室</h1>
+				<small>The key Laboratory of Artificial Intelligence Application Technology of State Ethnic Affairs Comission</small>
+			</div>
+			
+			<!-- 导航栏 -->
+			<nav class="navbar navbar-default" role="navigation" style="background-color: #1d4564;>
+				
+				<div class="container-fluid"> 
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							
+							<!-- 首页 -->
+							<li><a href="../main.html" style="color: #ffffff">网站首页</a></li>
+												
+							<!-- 实验室概况 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									实验室概况
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../lab/lab-introduce.html" style="padding: 4px 10px 4px 10px;">实验室介绍</a></li>
+									<li><a href="../lab/scholarship-committee.html" style="padding: 4px 10px 4px 10px;">学术委员会</a></li>
+									<li><a href="../lab/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室领导</a></li>
+									<li><a href="../lab/research-content.html" style="padding: 4px 10px 4px 10px;">研究内容</a></li>
+									<li><a href="../lab/research-group.html" style="padding: 4px 10px 4px 10px;">研究队伍</a></li>
+									<li><a href="../lab/organize.html" style="padding: 4px 10px 4px 10px;">组织机构</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../yjfx/research-direction.html" style="color: #ffffff">研究方向</a></li>
+							<li><a href="../project/project.html" style="color: #ffffff">承担项目</a></li>
+							
+							<li class="dropdown">
+								<a href="../kycg/competion-result.html" data-toggle="dropdown" style="color: #ffffff">
+									科研成果
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../kycg/competion-result.html" style="padding: 4px 10px 4px 10px;">竞赛获奖</a></li>
+									<li><a href="../kycg/research-result.html" style="padding: 4px 10px 4px 10px;">科研获奖</a></li>
+								</ul>
+							</li>
+							
+							<!-- 学术交流 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									学术交流
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../xsjl/academic-conferences.html" style="padding: 4px 10px 4px 10px;">学术会议</a></li>
+									<li><a href="../xsjl/academic-reports.html" style="padding: 4px 10px 4px 10px;">学术报告</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../kfjj/open-fund.html" style="color: #ffffff">开放基金</a></li>
+							
+							<!-- 人才培养 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									人才培养
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../rcpy/teacher.html" style="padding: 4px 10px 4px 10px;">导师名单</a></li>
+								</ul>
+							</li>
+														
+							<!-- 规章制度 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									规章制度
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../gzzd/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室守则</a></li>
+									<li><a href="../gzzd/safe-manager.html" style="padding: 4px 10px 4px 10px;">安全制度</a></li>
+									<li><a href="../gzzd/device-manager.html" style="padding: 4px 10px 4px 10px;">仪器设备管理制度</a></li>
+									<li><a href="../gzzd/state-manager.html" style="padding: 4px 10px 4px 10px;">平台管理制度</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../download/download.html" style="color: #ffffff">下载中心</a></li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</nav>
+					
+		</div>
+		
+		<div class="container">
+			<div class="col-md-3">
+				<div class="row">
+					<h5>
+						<div class="page-header" style="margin-top:5px; margin-left:15px;margin-bottom:0px">
+							<span class="glyphicon glyphicon-tag" aria-hidden="true" style="color:#1f4563"></span>
+							<span class="label" style="background-color: #ffffff;color:#1f4563;font-size:15px">
+								科研成果
+							</span>
+						</div>
+			
+					</h5>
+				</div>
+			
+				<ul class="nav nav-tab vertical-tab" role="tablist" id="vtab">
+					<li role="presentation" class="active">
+						<a href="competion-result.html">竞赛成果</a>
+					</li>
+					<li role="presentation">
+						<a href="research-result.html">科研成果</a>
+					</li>
+				</ul>
+			</div>
+				
+			<div class="col-md-8" style="margin-left:15px">
+				<h5>
+					<div class="page-header" style="margin-top:5px; margin-left:15px;margin-bottom:0px">
+						<span class="label" style="background-color: #ffffff;color:#1f4563;font-size:15px">
+							科研成果
+						</span>
+					</div>
+				</h5>
+				
+				<p style="text-align: center; padding:10px; font-size:16px">
+					<strong>科研成果</strong>
+				</p>
+				
+				<p><strong>1、科研项目类</strong></p>
+				<div class="table-responsive">
+					<table class="table table-bordered " style="text-align: center">
+						<thead>
+							<tr style="text-align: center; font-size:15px">
+								<th style="width:9%;text-align: center"><strong>序号</strong></th>
+								<th style="text-align: center"><strong>项目名称</strong></th>
+								<th style="width:22%;text-align: center"><strong>项目负责人</strong></th>
+								<th style="width:14%;text-align: center"><strong>项目来源</strong></th>
+								<th style="width:11%;text-align: center"><strong>项目经费</strong></th>
+								<th style="width:14%;text-align: center"><strong>起止年月</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>“基于例题图像智能分割技术应用研究”（校级科研项目）</td>
+								<td>钟小莉</td>
+								<td>校级</td>
+								<td></td>
+								<td>2018.5-2021.7</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>多层异质复杂网络链路预测在青海旅游景点自动推荐中的应用研究</td>
+								<td>唐明虎、彭英姐</td>
+								<td>省部级</td>
+								<td></td>
+								<td>2018.01-2021.08</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>基于立体图像智能分割技术应用的算法研究</td>
+								<td>保海军</td>
+								<td>校级</td>
+								<td></td>
+								<td>2018.01-2021.02</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>春晖计划-动态ECG信号特定指标可视化研究</td>
+								<td>潘春花、朱存、孙燕</td>
+								<td>校级</td>
+								<td></td>
+								<td>2017-2021.07.15</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>青海民族聚居区网络空间管理可视化研究</td>
+								<td>叶涛</td>
+								<td>校级</td>
+								<td></td>
+								<td>2017-2021.07.15</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>高校教育大数据挖掘关键技术研究</td>
+								<td>肖中杰</td>
+								<td>校级</td>
+								<td></td>
+								<td>2020.3.1-2021.07.15</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>春晖计划-青海海北藏羊饲养信息化化研究</td>
+								<td>张生福、刘琴</td>
+								<td>校级</td>
+								<td>70万</td>
+								<td>2021.7.15</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<p><strong>2、著作类</strong></p>
+				<div class="table-responsive">
+					<table class="table table-bordered " style="text-align: center">
+						<thead>
+							<tr style="text-align: center; font-size:15px">
+								<th style="width:9%;text-align: center"><strong>序号</strong></th>
+								<th style="text-align: center"><strong>成果名称</strong></th>
+								<th style="width:15%;text-align: center"><strong>作者及排名</strong></th>
+								<th style="width:20%;text-align: center"><strong>出版单位</strong></th>
+								<th style="width:11%;text-align: center"><strong>出版时间</strong></th>
+								<th style="width:15%;text-align: center"><strong>备注</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>《大学计算机基础》</td>
+								<td>钟小莉</td>
+								<td>北京邮电大学出版</td>
+								<td>2021.08</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<p><strong>3、论文类</strong></p>
+				<div class="table-responsive">
+					<table class="table table-bordered " style="text-align: center">
+						<thead>
+							<tr style="text-align: center; font-size:15px">
+								<th style="width:8%;text-align: center"><strong>序号</strong></th>
+								<th style="text-align: center"><strong>论文名称</strong></th>
+								<th style="width:13%;text-align: center"><strong>作者及排名</strong></th>
+								<th style="width:20%;text-align: center"><strong>期刊名称</strong></th>
+								<th style="width:11%;text-align: center"><strong>发表时间</strong></th>
+								<th style="width:25%;text-align: center"><strong>备注（期刊类别及分区）</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>A Tibetan Language Model That Considers </td>
+								<td>更太加、1</td>
+								<td>IEEE SIGNAL PROCESS</td>
+								<td>2021</td>
+								<td>SCI(SSCI)一区</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>青海民族大学食堂点餐APP设计与实现</td>
+								<td>潘春花、1/2</td>
+								<td>计算机时代</td>
+								<td>2021.01</td>
+								<td>一般公开</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Spring MVC模式下青海非遗工艺品在线销售系统</td>
+								<td>潘春花、1/3</td>
+								<td>计算机时代</td>
+								<td>2021.06</td>
+								<td>一般公开</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Probe into the Digital Protection of Qinghai Intangible Cultural Heritage by Library Based on New Media Technology</td>
+								<td>潘春花、1/4</td>
+								<td>Journal of Physics: Conference Series</td>
+								<td>2021.04</td>
+								<td>EI及A&HCI收录</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>基于遗传优化的自然语言文本数字水印方法</td>
+								<td>保海军、1/1</td>
+								<td>黑龙江工业学院学报</td>
+								<td>2021.08</td>
+								<td>一般公开</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>一种应用于光伏电站的无源嵌位移相变换器</td>
+								<td>李明、1/1</td>
+								<td>电力系统及其自动化学报</td>
+								<td>2021.6.15</td>
+								<td>二类核心期刊</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>A MAC Protocol of Concurrent  Scheduling Based on Spatial-Temporal Uncertainty for Underwater Sensor Networks</td>
+								<td>刘昕、1/5</td>
+								<td>Journal of Sensors</td>
+								<td>2021.04</td>
+								<td>SCI(SSCI)三区</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>Eigenvalue-based entropy in directed complex networks</td>
+								<td>孙燕、1</td>
+								<td>PLOS ONE</td>
+								<td>2021.06</td>
+								<td>SCI(SSCI)二区</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>基于分数阶傅里叶变换的语音消噪</td>
+								<td>孙燕、1</td>
+								<td>网络新媒体技术</td>
+								<td>2021.01</td>
+								<td>一般公开</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>基于三维直方图的立体图像层次化分割算法</td>
+								<td>谢旻旻、1/1</td>
+								<td>计算机仿真</td>
+								<td>2021.02</td>
+								<td>三类核心期刊</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>基于多种信息组合模式的非负矩阵分解链路预测模型[J].计算机应用研究</td>
+								<td>唐明虎、1/1</td>
+								<td>计算机应用研究</td>
+								<td>2021.05</td>
+								<td>二类核心期刊</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>基于技术集成的畜牧业经营模式的培育——兴海县试验草地存在的问题及改进</td>
+								<td>张生福、1</td>
+								<td>青海科技</td>
+								<td>2021.4.25</td>
+								<td>一般公开</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>Surface biomass monitoring of rotational grazing in alpine grassland based on satellite Multi-spectral images</td>
+								<td>张生福、1</td>
+								<td>AESEE 2021</td>
+								<td>2021</td>
+								<td>EI及A&HCI收录</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>藏语短语及其结构分类研究</td>
+								<td>才华、1</td>
+								<td>藏文教育</td>
+								<td>2021.02</td>
+								<td>一般公开</td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>IPV6网络过渡虚拟仿真实验设计与实现</td>
+								<td>肖中杰、1/1</td>
+								<td>实验科学与技术</td>
+								<td>2021.1</td>
+								<td>一般公开</td>
+							</tr>
+							<tr>
+								<td>16</td>
+								<td>基于嵌入并行注意力机制的YOLOv3模型高原动物种类检测算法</td>
+								<td>拉毛措、1/3</td>
+								<td>微处理机</td>
+								<td>2021.04</td>
+								<td>一般公开</td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td>Research on lightweight detection model of fake  domain name</td>
+								<td>叶涛、1</td>
+								<td>International Journal of Wireless and Mobile Computing</td>
+								<td>2021.05</td>
+								<td>EI及A&HCI收录</td>
+							</tr>
+							<tr>
+								<td>18</td>
+								<td>Trusted measurement of behaviors for the Internet of Things[J]. 2021, 60(1).</td>
+								<td>叶涛、1</td>
+								<td>AEJ-Alexandria Engineering Journal</td>
+								<td>2021.01</td>
+								<td>SCI(SSCI)二区</td>
+							</tr>
+							<tr>
+								<td>19</td>
+								<td>联合多神经网络模型的藏文字校对方法</td>
+								<td>安见才让，1</td>
+								<td>微处理机</td>
+								<td>2021.02</td>
+								<td>一般公开</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<p><strong>4、研究报告、咨询、要报类</strong></p>
+				<div class="table-responsive">
+					<table class="table table-bordered " style="text-align: center">
+						<thead>
+							<tr style="text-align: center; font-size:15px">
+								<th style="width:9%;text-align: center"><strong>序号</strong></th>
+								<th style="text-align: center"><strong>成果名称</strong></th>
+								<th style="width:15%;text-align: center"><strong>作者及排名</strong></th>
+								<th style="width:25%;text-align: center"><strong>报送单位</strong></th>
+								<th style="width:11%;text-align: center"><strong>报送时间</strong></th>
+								<th style="width:15%;text-align: center"><strong>备注（采纳情况）</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>汉藏智能语音交互关键技术及应用</td>
+								<td>魏建国、更太加、孙琦龙、安见才让、叶涛,二等奖</td>
+								<td>青海省科技厅</td>
+								<td>2021</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<p><strong>5、专利、获奖类以及其他类</strong></p>
+				<div class="table-responsive">
+					<table class="table table-bordered " style="text-align: center">
+						<thead>
+							<tr style="text-align: center; font-size:15px">
+								<th style="width:9%;text-align: center"><strong>序号</strong></th>
+								<th style="text-align: center"><strong>成果名称</strong></th>
+								<th style="width:15%;text-align: center"><strong>作者及排名</strong></th>
+								<th style="width:25%;text-align: center"><strong>报送单位</strong></th>
+								<th style="width:11%;text-align: center"><strong>报送时间</strong></th>
+								<th style="width:15%;text-align: center"><strong>备注</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>西部需求牵引，西东部共建人工智能实践教学模式与平台建设的探索与实践</td>
+								<td>魏建国、孙琦龙、叶涛，二等奖</td>
+								<td>获奖类，青海省人民政府</td>
+								<td>2021.8</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>第七届“民生银杯”青海省大学生创新创业大赛校园选拔</td>
+								<td>魏建国、优秀指导老师</td>
+								<td>获奖类，就业创业指导中心</td>
+								<td>2021.11</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>第七届“民生银杯”青海省大学生创新创业大赛校园选拔</td>
+								<td>更太加、优秀指导老师</td>
+								<td>获奖类，就业创业指导中心</td>
+								<td>2021.11</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>第七届“民生银杯”青海省大学生创新创业大赛校园选拔</td>
+								<td>团队奖：李悄悄、蒋金城、桑求、华格优、张雨，二等奖</td>
+								<td>获奖类，就业创业指导中心</td>
+								<td>2021.11</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>景区旅游综合信息化支撑管理软件V1.0</td>
+								<td>保海军/td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.03</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>智慧旅游景区在线服务平台V1.0</td>
+								<td>保海军/td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.03</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>一种光伏阵列的最大功率跟踪控制方法及系统</td>
+								<td>李  明</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.01</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>健康数据采集系统（微信小程序版）v1.0</td>
+								<td>马如义</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.07</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>实用新型：一种浮球式水体环境监测装置</td>
+								<td>刘昕</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.08</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>基于物联网的智能监测文物保护系统v1.0</td>
+								<td>张明亮</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.08</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>基于微信小程序的非遗工艺品鉴定证书检索系统V1.0</td>
+								<td>潘春花</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.02</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>基于新媒体技术的非遗工艺品数字化展示平台V.0</td>
+								<td>潘春花</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.02</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>学科竞赛管理系统</td>
+								<td>彭英杰</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.08</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>社团信息管理系统V1.0</td>
+								<td>彭英杰</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.08</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>基于C sharp的网络数据传输监控系统</td>
+								<td>元尼东珠</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.07</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>16</td>
+								<td>基于C sharp语言的目标数据检索系统V1.0</td>
+								<td>元尼东珠</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.07</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td>基于光照补偿的图像增强系统V1.0</td>
+								<td>张鑫</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.03</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>18</td>
+								<td>基于机器视觉的图像分割系统V1.0</td>
+								<td>张鑫</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.05</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>19</td>
+								<td>一种基于声学分析的羊反刍行为监测方法</td>
+								<td>张生福</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.05</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>20</td>
+								<td>一种基于树莓派的藏羊牧食行为监测方法</td>
+								<td>张生福</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.04</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>21</td>
+								<td>一种新型计算机应用自动检测装置</td>
+								<td>乜国雷</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.01</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>22</td>
+								<td>基于混沌映射的信息加密系统V1.0</td>
+								<td>乜国雷</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.03</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>23</td>
+								<td>基于关键词的网络信息安全监测系统V1.0</td>
+								<td>乜国雷</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.03</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>24</td>
+								<td>层次化网络安全威胁态势量化评估系统V1.0</td>
+								<td>乜国雷</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.04</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>25</td>
+								<td>基于模糊矩阵博弈的网络安全威胁评估系统V1.0</td>
+								<td>乜国雷</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.04</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>26</td>
+								<td>车钥匙</td>
+								<td>昝风彪</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.05</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>20</td>
+								<td>车钥匙</td>
+								<td>刘昕</td>
+								<td>专利类，中华人民共和国国家版权</td>
+								<td>2021.05</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+		
+		<footer class="footer text-center" style="margin-top:10px">
+		    <div class="container" style="height: 110px;padding:5px; background-color:#1f4563;color:#ffffff">
+				<div class="row">
+					<h5>电话：0971-8804033</h5>
+				</div>
+				<div class="row" >
+					<h5>地址：青海省西宁市城东区博雅路青海民族大学工科校区工学主楼</h5>
+				</div>
+				<div class="row" >
+					<h5>邮编：810007</h5>
+				</div>
+			</div>
+			<div class="container">
+				<h5>Copyright @ XX-XX XXXX</h5>
+			</div>
+		</footer>
+	</body>
+
+</html>
+
+

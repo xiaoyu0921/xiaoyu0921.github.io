@@ -1,0 +1,23 @@
+p{
+	text-indent:2em;    /*每个P段落，首行空出两个空格，即缩进两个字符*/
+	font-size: 15px;
+}
+
+.divBox{
+	max-width: 10px;
+	border: 1px solid red;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.navbar{
+	padding-left: 15px ;
+	margin-bottom: 0px;
+	border-radius: 5px;
+	text-align: center;
+} 
+.navbar .nav >li{
+	width: 110px;
+}

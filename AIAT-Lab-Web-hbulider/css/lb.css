@@ -1,0 +1,43 @@
+/* 
+轮播图demo
+*/
+.demo{
+    border: 1px solid #d0d0d0;
+    width:transparent;
+    height:150px;
+    margin:2px;
+    /* background-color:aquamarine; */
+    overflow: hidden;/*用于隐藏超出展示容器的内容部分*/
+}
+.demo1{
+    width:1000px;
+    height:150px;
+    margin:0px auto;
+    animation:text 30s infinite  linear;
+    font-size:0px;/*消除图片间隔*/
+    
+}
+.demo1 img{
+    width:200px;
+    height:150px;
+    float:left;
+    margin-right: 20px;
+}
+@keyframes text {          /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
+    0%,10%{
+        margin-left:0px;
+    }
+    20%,30%{
+        margin-left:-100px;
+    }
+    40%,50%{
+        margin-left:-200px;
+    }
+    60%,70%{
+        margin-left:-300px;
+    }
+    80%,90%{
+        margin-left:-400px;
+    }
+}
+

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>人工智能应用技术国家民委办重点实验室</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="../../css/tales.css" />
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<script>
+		        $(function () {
+		            dropdownOpen();
+		
+		        });
+		        function dropdownOpen(){
+		            $('.dropdown').mouseover(function(){
+		                $(this).addClass('show');
+		                //查找当前元素子节点中的对象，修改其class，这样
+		                //这样当有多个下拉菜单时，可以分别独立处理，而不会出现都下拉的bug
+		                $(this).find(".dropdown-menu").addClass('show');
+		
+		            }).mouseout(function(){
+		
+		                $(this).find(".dropdown-menu").removeClass('show');
+		                $(this).removeClass('show');
+		            });
+		        }
+		</script>
+		
+	</head>
+	<style>
+		.container{
+			padding: 5px;
+		}
+		
+		.navbar{
+			padding-left: 15px ;
+		    margin-bottom: 0px;
+		    border-radius: 5px;
+			text-align: center;
+		} 
+		.navbar .nav >li{
+			width: 110px;
+		} 
+
+		.navbar .nav >li >a:visited{
+		    color: aqua;
+		    background-color: #000000;
+		}
+		.navbar .nav > li > a:hover {
+		    color: aqua;
+		    background-color: #1d4b7a;
+		}
+		
+		.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+		    background-color: transparent;
+		}
+		
+		.navbtn{
+			margin-top: 4px;
+			color: #707070;;
+			height:transparent;
+			width: 55px;
+			align-content: center;
+			background-color: transparent;
+			font-size: smaller;
+		}
+		
+		.group-title{
+			background-color: #e1e1e1; 
+			margin-left:0px
+		}
+		.label{
+			padding-left: 5px;
+			padding-right: 5px;
+			padding-bottom: 7px;
+			padding-top: 7px;
+			height: transparent;
+			background-color:#1d4564;
+			font-size: small;
+			border-radius: 20;
+		}
+		.more{
+			color: #707070;
+		}
+		
+		a{text-decoration:none;color: #000000;} 
+		
+		a:hover{text-decoration:none;color: #000000;} 
+		
+		p{
+			text-indent:2em;    /*每个P段落，首行空出两个空格，即缩进两个字符*/
+			font-size: 15px;
+		}
+		
+		
+	</style>
+	
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>	国家民委办人工智能应用技术实验室</h1>
+				<small>The key Laboratory of Artificial Intelligence Application Technology of State Ethnic Affairs Comission</small>
+			</div>
+			
+			<!-- 导航栏 -->
+			<nav class="navbar navbar-default" role="navigation" style="background-color: #1d4564;>
+				
+				<div class="container-fluid"> 
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							
+							<!-- 首页 -->
+							<li><a href="../main.html" style="color: #ffffff">网站首页</a></li>
+												
+							<!-- 实验室概况 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									实验室概况
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../lab/lab-introduce.html" style="padding: 4px 10px 4px 10px;">实验室介绍</a></li>
+									<li><a href="../lab/scholarship-committee.html" style="padding: 4px 10px 4px 10px;">学术委员会</a></li>
+									<li><a href="../lab/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室领导</a></li>
+									<li><a href="../lab/research-content.html" style="padding: 4px 10px 4px 10px;">研究内容</a></li>
+									<li><a href="../lab/research-group.html" style="padding: 4px 10px 4px 10px;">研究队伍</a></li>
+									<li><a href="../lab/organize.html" style="padding: 4px 10px 4px 10px;">组织机构</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../yjfx/research-direction.html" style="color: #ffffff">研究方向</a></li>
+							<li><a href="../project/project.html" style="color: #ffffff">承担项目</a></li>
+							
+							<li class="dropdown">
+								<a href="../kycg/competion-result.html" data-toggle="dropdown" style="color: #ffffff">
+									科研成果
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../kycg/competion-result.html" style="padding: 4px 10px 4px 10px;">竞赛获奖</a></li>
+									<li><a href="../kycg/research-result.html" style="padding: 4px 10px 4px 10px;">科研获奖</a></li>
+								</ul>
+							</li>
+							
+							<!-- 学术交流 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									学术交流
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="#" style="padding: 4px 10px 4px 10px;">学术会议</a></li>
+									<li><a href="#" style="padding: 4px 10px 4px 10px;">学术报告</a></li>
+									
+								</ul>
+							</li>
+							
+							<li><a href="../kfjj/open-fund.html" style="color: #ffffff">开放基金</a></li>
+							
+							<!-- 人才培养 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									人才培养
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../rcpy/teacher.html" style="padding: 4px 10px 4px 10px;">导师名单</a></li>
+								</ul>
+							</li>
+														
+							<!-- 规章制度 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									规章制度
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../gzzd/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室守则</a></li>
+									<li><a href="../gzzd/safe-manager.html" style="padding: 4px 10px 4px 10px;">安全制度</a></li>
+									<li><a href="../gzzd/device-manager.html" style="padding: 4px 10px 4px 10px;">仪器设备管理制度</a></li>
+									<li><a href="../gzzd/state-manager.html" style="padding: 4px 10px 4px 10px;">平台管理制度</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../download/download.html" style="color: #ffffff">下载中心</a></li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</nav>
+		</div>
+		
+		<div class="container">
+			 <div class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<h5>
+							<div class="page-header" style="margin-top:5px; margin-left:15px;margin-bottom:0px">
+								<span class="glyphicon glyphicon-tag" aria-hidden="true" style="color:#1f4563"></span>
+								<span class="label" style="background-color: #ffffff;color:#1f4563;font-size:15px">
+									学术交流
+								</span>
+							</div>
+
+						</h5>
+					</div>
+
+					<ul class="nav nav-tab vertical-tab" role="tablist" id="vtab">
+						<li role="presentation" class="active">
+							<a href="academic-conferences.html">学术会议</a>
+						</li>
+						<li role="presentation">
+							<a href="academic-reports.html">学术报告</a>
+						</li>
+					</ul>
+				</div>
+					
+				<div class="col-md-8" style="margin-left:15px">
+					<h5>
+						<div class="page-header" style="margin-top:5px; margin-left:15px;margin-bottom:0px">
+							<span class="label" style="background-color: #ffffff;color:#1f4563;font-size:15px">
+								学术会议
+							</span>
+						</div>
+					</h5>
+					<h3 style="text-align: center;">
+						<strong>青海民族大学与台湾万能科技大学合作项目招生简章</strong>
+					</h3>
+					<h6 style="text-align: center;">
+						发布时间：2020-04-16
+					</h6>
+					
+					<div class="text-justify p" style="margin:30px">
+						<p>
+							<strong>一、学校简介</strong>
+						</p>
+						<p>
+							台湾万能科技大学，位于台湾桃园县中坜市，创立于1972年3月27日，前身为私立万能工业技艺专科学校，2004年改名为台湾万能科技大学。建校迄今近40年,共有四个学院（工程与电资学院、管理学院、观光与设计学院、通识教育中心）六个研究所及17个系。全校学生共10,430人。
+						</p>
+						<p>
+							<strong>二、学习资源</strong>
+						</p>
+						<p>
+							台湾万能科技大学注重教学与研究的实务应用，落实技职教育目标，推动跨系所整合性实务学程及专题制作，提升毕业生就业竞争力。万能科技大学致力于建构高品质的学习环境、优质学园，在人文与专业并重的理念下，建置了学生学习资源中心、教师教学资源中心、创意艺术中心、音乐教室、艺术教室、语言自学与检定中心及桃园文史工作室、有机光电实验室、财务金融教育实验室、Cisco网路实验室、生技化妆品研发室、积体电路实验室及物流模拟及电子商务研发室等上百个专业空间与教室，为校园师生提供了最佳的教学与学习设备与资源。
+						</p>
+						<p>
+							<strong>三、招生简介</strong>
+						</p>
+						<p>
+							1、学习时间：每年8月至次年1月。
+						</p>
+						<p>
+							2、选派名额：不限（大二、大三学生均可）。
+						</p>
+						<p>
+							3、学习专业：请参考附件“台湾万能科技大学院系列表”，具体课程查询网页http://www.vnu.edu.tw/。
+						</p>
+						<p>
+							<strong>四、申请条件</strong>
+						</p>
+						<p>
+							1、政治立场坚定，坚持四项基本原则，道德品质优良，维护国家统一、民族团结。
+						</p>
+						<p>
+							2、遵守学校各项规章制度，遵守国家法律法规，讲文明，讲礼貌，无违纪行为。
+						</p>
+						<p>
+							3、学习勤奋、成绩优良，有钻研和创新精神。
+						</p>
+						<p>
+							4、尊敬老师、团结同学、积极参加班级、学院、学校的集体活动和社会活动，具有团队合作精神。
+						</p>
+						<p>
+							<strong>五、收费标准</strong>
+						</p>
+						<p>
+							1、学生在台湾万能科技大学学习期间仍需缴纳我校学费和住宿费，免交台湾万能科技大学的住宿费、宿舍网络及水电费。
+						</p>
+						<p>
+							2、学生自行负担在台研修费、旅费、书籍费、交通费、护照费、签证费、保险费、其它属于个人支出费用。
+						</p>
+						<p>
+							3、研修费每学期约6000-8000元人民币/人。
+						</p>
+						<p>
+							4、往返交通费约6000元人民币/人。
+						</p>
+						<p>
+							5、生活费1100元/月/人，通行证费50元人民币/人。
+						</p>
+						<p>
+							6、保险费300元人民币/人，其它费用每学期约2000元人民币/人。
+						</p>
+						<p>
+							7、赴台湾万能科技大学学生一次性交付项目管理费1000元人民币（含报名费）。
+						</p>
+						<p>
+							8、赴台湾万能科技大学学习学生，学校一次性资助2000元人民币，选派院系一次性资助2000元人民币。
+						</p>
+					
+						<p>
+							<strong>六、遴选时间</strong>
+						</p>
+						<p>
+							5月遴选，9月赴台。
+						</p>
+						<p>
+							<strong>七、报名地点</strong>
+						</p>
+						<p>
+							青海民族大学国际教育交流中心
+						</p>
+						<p>
+							青海省西宁市八一中路3号
+						</p>
+						<p>
+							<strong>八、联系方式</strong>
+						</p>
+						<p>
+							电话：0971-8811192
+						</p>
+						<p>
+							传真：0971-8811192
+						</p>
+						<p>
+							网址：www.qhmu.edu.cn 国际教育交流中心
+						</p>
+					</div>
+				</div>
+			 </div>
+		</div>
+		
+		<footer class="footer text-center" style="margin-top:10px">
+		    <div class="container" style="height: 110px;padding:5px; background-color:#1f4563;color:#ffffff">
+				<div class="row">
+					<h5>电话：0971-8804033</h5>
+				</div>
+				<div class="row" >
+					<h5>地址：青海省西宁市城东区博雅路青海民族大学工科校区工学主楼</h5>
+				</div>
+				<div class="row" >
+					<h5>邮编：810007</h5>
+				</div>
+			</div>
+			<div class="container">
+				<h5>Copyright @ XX-XX XXXX</h5>
+			</div>
+		</footer>
+
+	</body>
+</html>
+
+
