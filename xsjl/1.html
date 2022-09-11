@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>人工智能应用技术国家民委办重点实验室</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="../../css/tales.css" />
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<script>
+		        $(function () {
+		            dropdownOpen();
+		
+		        });
+		        function dropdownOpen(){
+		            $('.dropdown').mouseover(function(){
+		                $(this).addClass('show');
+		                //查找当前元素子节点中的对象，修改其class，这样
+		                //这样当有多个下拉菜单时，可以分别独立处理，而不会出现都下拉的bug
+		                $(this).find(".dropdown-menu").addClass('show');
+		
+		            }).mouseout(function(){
+		
+		                $(this).find(".dropdown-menu").removeClass('show');
+		                $(this).removeClass('show');
+		            });
+		        }
+		</script>
+		
+	</head>
+	<style>
+		.container{
+			padding: 5px;
+		}
+		
+		.navbar{
+			padding-left: 15px ;
+		    margin-bottom: 0px;
+		    border-radius: 5px;
+			text-align: center;
+		} 
+		.navbar .nav >li{
+			width: 110px;
+		}
+
+		.navbar .nav >li >a:visited{
+		    color: aqua;
+		    background-color: #000000;
+		}
+		.navbar .nav > li > a:hover {
+		    color: aqua;
+		    background-color: #1d4b7a;
+		}
+		
+		.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+		    background-color: transparent;
+		}
+		
+		.navbtn{
+			margin-top: 4px;
+			color: #707070;;
+			height:transparent;
+			width: 55px;
+			align-content: center;
+			background-color: transparent;
+			font-size: smaller;
+		}
+		
+		.group-title{
+			background-color: #e1e1e1; 
+			margin-left:0px
+		}
+		.label{
+			padding-left: 5px;
+			padding-right: 5px;
+			padding-bottom: 7px;
+			padding-top: 7px;
+			height: transparent;
+			background-color:#1d4564;
+			font-size: small;
+			border-radius: 20;
+		}
+		.more{
+			color: #707070;
+		}
+		
+		a{text-decoration:none;color: #000000;} 
+		
+		a:hover{text-decoration:none;color: #000000;} 
+		
+		p{
+			text-indent:2em;    /*每个P段落，首行空出两个空格，即缩进两个字符*/
+			font-size: 15px;
+		}
+		
+		
+	</style>
+	
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>	国家民委办人工智能应用技术实验室</h1>
+				<small>The key Laboratory of Artificial Intelligence Application Technology of State Ethnic Affairs Comission</small>
+			</div>
+			
+			<!-- 导航栏 -->
+			<nav class="navbar navbar-default" role="navigation" style="background-color: #1d4564;>
+				
+				<div class="container-fluid"> 
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							
+							<!-- 首页 -->
+							<li><a href="../index.html" style="color: #ffffff">网站首页</a></li>
+												
+							<!-- 实验室概况 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									实验室概况
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../lab/lab-introduce.html" style="padding: 4px 10px 4px 10px;">实验室介绍</a></li>
+									<li><a href="../lab/scholarship-committee.html" style="padding: 4px 10px 4px 10px;">学术委员会</a></li>
+									<li><a href="../lab/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室领导</a></li>
+									<li><a href="../lab/research-content.html" style="padding: 4px 10px 4px 10px;">研究内容</a></li>
+									<li><a href="../lab/research-group.html" style="padding: 4px 10px 4px 10px;">研究队伍</a></li>
+									<li><a href="../lab/organize.html" style="padding: 4px 10px 4px 10px;">组织机构</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../yjfx/research-direction.html" style="color: #ffffff">研究方向</a></li>
+							<li><a href="../project/project.html" style="color: #ffffff">承担项目</a></li>
+							
+							<li class="dropdown">
+								<a href="../kycg/competion-result.html" data-toggle="dropdown" style="color: #ffffff">
+									科研成果
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../kycg/competion-result.html" style="padding: 4px 10px 4px 10px;">竞赛获奖</a></li>
+									<li><a href="../kycg/research-result.html" style="padding: 4px 10px 4px 10px;">科研获奖</a></li>
+								</ul>
+							</li>
+							
+							<!-- 学术交流 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									学术交流
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="#" style="padding: 4px 10px 4px 10px;">学术会议</a></li>
+									<li><a href="#" style="padding: 4px 10px 4px 10px;">学术报告</a></li>
+									
+								</ul>
+							</li>
+							
+							<li><a href="../kfjj/open-fund.html" style="color: #ffffff">开放基金</a></li>
+							
+							<!-- 人才培养 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									人才培养
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../rcpy/teacher.html" style="padding: 4px 10px 4px 10px;">导师名单</a></li>
+								</ul>
+							</li>
+														
+							<!-- 规章制度 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									规章制度
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../gzzd/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室守则</a></li>
+									<li><a href="../gzzd/safe-manager.html" style="padding: 4px 10px 4px 10px;">安全制度</a></li>
+									<li><a href="../gzzd/device-manager.html" style="padding: 4px 10px 4px 10px;">仪器设备管理制度</a></li>
+									<li><a href="../gzzd/state-manager.html" style="padding: 4px 10px 4px 10px;">平台管理制度</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../download/download.html" style="color: #ffffff">下载中心</a></li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</nav>
+		</div>
+		
+		<div class="container">
+			 <div class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<h5>
+							<div class="page-header" style="margin-top:5px; margin-left:15px;margin-bottom:0px">
+								<span class="glyphicon glyphicon-tag" aria-hidden="true" style="color:#1f4563"></span>
+								<span class="label" style="background-color: #ffffff;color:#1f4563;font-size:15px">
+									学术交流
+								</span>
+							</div>
+
+						</h5>
+					</div>
+
+					<ul class="nav nav-tab vertical-tab" role="tablist" id="vtab">
+						<li role="presentation" class="active">
+							<a href="academic-conferences.html">学术会议</a>
+						</li>
+						<li role="presentation">
+							<a href="academic-reports.html">学术报告</a>
+						</li>
+					</ul>
+				</div>
+					
+				<div class="col-md-8" style="margin-left:15px">
+					<h5>
+						<div class="page-header" style="margin-top:5px; margin-left:15px;margin-bottom:0px">
+							<span class="label" style="background-color: #ffffff;color:#1f4563;font-size:15px">
+								学术会议
+							</span>
+						</div>
+					</h5>
+					<h3 style="text-align: center;">
+						<strong>与天津大学等对口支援高校联合培养本科生工作</strong>
+					</h3>
+					<h6 style="text-align: center;">
+						发布时间：2020-04-16
+					</h6>
+					
+					<div class="text-justify p" style="margin:30px">
+						<p>
+							<strong>一、选拔条件</strong>
+						</p>
+						<p>
+							（一）热爱祖国，拥护党的路线、方针和政策，模范遵守《高等学校学生行为准则》和学校各项规章制度，无违纪现象。
+						</p>
+						<p>
+							（二）学习刻苦，申请学生入学以来所修课程平均成绩绩点在3.0以上，无重修记录，青海籍学生成绩要求可适当放宽。
+						</p>
+						<p>
+							（三）学生德、智、体、美、劳全面发展，通过大学英语四、六级等考试，在党团活动中表现突出，积极参加创新创业类学科竞赛并取得良好成绩，综合素质较强的学生可优先考虑。
+						</p>
+						<p>
+							<strong>二、选拔程序</strong>
+						</p>
+						<p>
+							（一）学生本人自愿申请，经学院根据上述选拔基本条件确认申请人资格。
+						</p>
+						<p>
+							（二）各学院对具备资格的学生按同专业同年级按入学以来平均成绩的绩点进行排序，提出拟推荐学生名单，经学院党政联席会议研究通过并在学院公示不少于五个工作日后报教务处审核。
+						</p>
+						<p>
+							（三）教务处与学工处等部门组织进行综合面试，最终确定联合培养学生名单。
+						</p>
+						<p>
+							<strong>三、报名时间要求</strong>
+						</p>
+						<p>
+							各相关学院按要求将推荐学生名单报教务处招生与学籍科，逾期不报专业计划将调剂至其它专业。中央民族大学因未回函，联合培养等事宜还未确定，可先不限专业年级申报，教务处随后下发补充通知。
+						</p>
+						<p>
+							<strong>四、组织实施</strong>
+						</p>
+						<p>
+							（一）计划实施整体由教务处牵头，财务处、学生工作处协调联动。
+						</p>
+						<p>
+							（二）教务处细化学生遴选程序与细则，负责培养前期选拨、培养中期学籍管理，培养结束学分认定及成绩管理。
+						</p>
+						<p>
+							（三）财务处负责安排合作育人专项经费预算。
+						</p>
+						<p>
+							（四）学生工作处按照对口支援高校及协同育人单位要求与派出学生签订自我安全管理协议书。
+						</p>
+						<p>
+							<strong>五、培养模式</strong>
+						</p>
+						<p>
+							（一）“2+2”模式学生第三、四学年在天津大学、北京工业大学相关专业学习；“2+1+1”模式学生第三学年在中国人民大学相关专业学习；“1+2+1”模式学生第二、三学年在厦门大学相关专业学习。成绩合格，符合毕业条件和授予学士学位条件，颁发青海民族大学毕业证书和学士学位证书。
+						</p>
+						<p>
+							（二）联合培养学生的学分，我校与对口支援高校之间进行学分互认与置换。
+						</p>
+						<p>
+							<strong>六、学费缴纳</strong>
+						</p>
+						<p>
+							“2+2”、“2+1+1”学生按照天津大学、中国人民大学、北京工业大学相关专业收费标准向对方学校缴纳学费、住宿费。 “1+2+1”学生第二、三学年的学费、住宿费向青海民族大学缴纳，由青海民族大学财务处统一划拨到厦门大学计财处。
+						</p>
+					</div>
+				</div>
+			 </div>
+		</div>
+		
+		<footer class="footer text-center" style="margin-top:10px">
+		    <div class="container" style="height: 110px;padding:5px; background-color:#1f4563;color:#ffffff">
+				<div class="row">
+					<h5>电话：0971-8804033</h5>
+				</div>
+				<div class="row" >
+					<h5>地址：青海省西宁市城东区博雅路青海民族大学工科校区工学主楼</h5>
+				</div>
+				<div class="row" >
+					<h5>邮编：810007</h5>
+				</div>
+			</div>
+			<div class="container">
+				<h5>Copyright @ XX-XX XXXX</h5>
+			</div>
+		</footer>
+
+	</body>
+</html>
+
+

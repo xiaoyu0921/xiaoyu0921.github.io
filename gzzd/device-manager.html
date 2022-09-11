@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>人工智能应用技术国家民委办重点实验室</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="../../css/tales.css" />
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<script>
+		        $(function () {
+		            dropdownOpen();
+		
+		        });
+		        function dropdownOpen(){
+		            $('.dropdown').mouseover(function(){
+		                $(this).addClass('show');
+		                //查找当前元素子节点中的对象，修改其class，这样
+		                //这样当有多个下拉菜单时，可以分别独立处理，而不会出现都下拉的bug
+		                $(this).find(".dropdown-menu").addClass('show');
+		
+		            }).mouseout(function(){
+		
+		                $(this).find(".dropdown-menu").removeClass('show');
+		                $(this).removeClass('show');
+		            });
+		        }
+		</script>
+		
+	</head>
+	<style>
+		.container{
+			padding: 5px;
+		}
+		.navbar{
+			padding-left: 15px ;
+		    margin-bottom: 0px;
+		    border-radius: 5px;
+			text-align: center;
+		} 
+		.navbar .nav >li{
+			width: 110px;
+		}
+
+		.navbar .nav >li >a:visited{
+		    color: aqua;
+		    background-color: #000000;
+		}
+		.navbar .nav > li > a:hover {
+		    color: aqua;
+		    background-color: #1d4b7a;
+		}
+		
+		.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+		    background-color: transparent;
+		}
+		
+		.navbtn{
+			margin-top: 4px;
+			color: #707070;;
+			height:transparent;
+			width: 55px;
+			align-content: center;
+			background-color: transparent;
+			font-size: smaller;
+		}
+		
+		.group-title{
+			background-color: #e1e1e1; 
+			margin-left:0px
+		}
+		.label{
+			padding-left: 5px;
+			padding-right: 5px;
+			padding-bottom: 7px;
+			padding-top: 7px;
+			height: transparent;
+			background-color:#1d4564;
+			font-size: small;
+			border-radius: 20;
+		}
+		.more{
+			color: #707070;
+		}
+		
+		.p{
+		    text-indent:2em;    /*每个P段落，首行空出两个空格，即缩进两个字符*/
+			font-size: 17px;
+		}
+		a{text-decoration:none;color: #000000;}
+		
+		a:hover{text-decoration:none;color: #000000;} 
+	</style>
+	
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>	国家民委办人工智能应用技术实验室</h1>
+				<small>The key Laboratory of Artificial Intelligence Application Technology of State Ethnic Affairs Comission</small>
+			</div>
+			
+			<!-- 导航栏 -->
+			<nav class="navbar navbar-default" role="navigation" style="background-color: #1d4564;>
+				
+				<div class="container-fluid"> 
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							
+							<!-- 首页 -->
+							<li><a href="../index.html" style="color: #ffffff">网站首页</a></li>
+												
+							<!-- 实验室概况 -->
+							<li class="dropdown">
+								<a href="../lab/lab-introduce.html" data-toggle="dropdown" style="color: #ffffff">
+									实验室概况
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../lab/lab-introduce.html" style="padding: 4px 10px 4px 10px;">实验室介绍</a></li>
+									<li><a href="../lab/scholarship-committee.html" style="padding: 4px 10px 4px 10px;">学术委员会</a></li>
+									<li><a href="../lab/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室领导</a></li>
+									<li><a href="../lab/research-content.html" style="padding: 4px 10px 4px 10px;">研究内容</a></li>
+									<li><a href="../lab/research-group.html" style="padding: 4px 10px 4px 10px;">研究队伍</a></li>
+									<li><a href="../lab/organize.html" style="padding: 4px 10px 4px 10px;">组织机构</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../yjfx/research-direction.html" style="color: #ffffff">研究方向</a></li>
+							<li><a href="../project/project.html" style="color: #ffffff">承担项目</a></li>
+							
+							<li class="dropdown">
+								<a href="../kycg/competion-result.html" data-toggle="dropdown" style="color: #ffffff">
+									科研成果
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../kycg/competion-result.html" style="padding: 4px 10px 4px 10px;">竞赛获奖</a></li>
+									<li><a href="../kycg/research-result.html" style="padding: 4px 10px 4px 10px;">科研获奖</a></li>
+									
+								</ul>
+							</li>
+							
+							<!-- 学术交流 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									学术交流
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../xsjl/academic-conferences.html" style="padding: 4px 10px 4px 10px;">学术会议</a></li>
+									<li><a href="../xsjl/academic-reports.html" style="padding: 4px 10px 4px 10px;">学术报告</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../kfjj/open-fund.html" style="color: #ffffff">开放基金</a></li>
+							
+							<!-- 人才培养 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									人才培养
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../rcpy/teacher.html" style="padding: 4px 10px 4px 10px;">导师名单</a></li>
+								</ul>
+							</li>
+														
+							<!-- 规章制度 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									规章制度
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="../gzzd/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室守则</a></li>
+									<li><a href="../gzzd/safe-manager.html" style="padding: 4px 10px 4px 10px;">安全制度</a></li>
+									<li><a href="../gzzd/device-manager.html" style="padding: 4px 10px 4px 10px;">仪器设备管理制度</a></li>
+									<li><a href="../gzzd/state-manager.html" style="padding: 4px 10px 4px 10px;">平台管理制度</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="../download/download.html" style="color: #ffffff">下载中心</a></li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</nav>
+		</div>
+		
+		<div class="container">
+			 <div class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<h5>
+							<div class="page-header" style="margin-top:5px; margin-left:15px;margin-bottom:0px">
+								<span class="glyphicon glyphicon-tag" aria-hidden="true" style="color:#1f4563"></span>
+								<span class="label" style="background-color: #ffffff;color:#1f4563;font-size:15px">
+									规章制度
+								</span>
+							</div>
+
+						</h5>
+					</div>
+
+					<ul class="nav nav-tab vertical-tab" role="tablist" id="vtab">
+						<li role="presentation" class="active">
+							<a href="lab-manager.html">实验室守则</a>
+						</li>
+						<li role="presentation">
+							<a href="safe-manager.html">安全制度</a>
+						</li>
+						<li role="presentation">
+							<a href="device-manager.html">仪器设备管理制度</a>
+						</li>
+						<li role="presentation">
+							<a href="state-manager.html">平台管理制度</a>
+						</li>
+					</ul>
+				</div>
+					
+				<div class="col-md-8" style="margin-left:15px">
+					<h5>
+						<div class="page-header" style="margin-top:5px; margin-left:15px;margin-bottom:0px">
+							<span class="label" style="background-color: #ffffff;color:#1f4563;font-size:15px">
+								仪器设备管理制度
+							</span>
+						</div>
+					</h5>
+					<h3 style="text-align: center;">
+						<strong>国家民委办人工智能应用技术实验室仪器设备管理制度</strong>
+					</h3>
+					
+					
+					<div class="text-justify p" style="margin:30px">
+						<h4 style="text-align: center; margin-top:20px">
+							<p><strong>（一）设备管理制度</strong></p>
+						</h4>
+						<p>
+							设备管理是指设备的购买、转入、借入、借出、报废、遗失、维护、建账、检查、保管、实验消耗品的购买等制度，设备管理工作由中心主任直接领导，由设备管理员、设备维护员直接操作，中心其他人员协作完成。具体规定如下：
+						</p>
+						<p>
+							1.设备作为公共财产必须认真管理、维护，全中心人员均有义务维护、管理好中心设备。
+						</p>
+						<p>
+							2.设备购入或转入后必须进行验收，合格后及时办理手续，建立账目，相应单据妥善保存。
+						</p>
+						<p>
+							3.设备出借须经中心审批，并办理有关手续，到期归还。贵重设备出借须经学院同意。
+						</p>
+						<p>
+							4.设备报废须按学校规定手续办理，并及时修改管理账目。
+						</p>
+						<p>
+							5.设备专人保管，共同爱护。定期由设备管理员检查登记。
+						</p>
+						<p>
+							6.设备发生损坏、故障，相应实验室管理员须认真登记。将故障现象及时通知设备管理员、设备维护员。修理好的设备要通知设备管理员及时修改有关账目。对于贵重设备的维护，必须及时通知主管领导，对必须外修的设备，须报中心主任审批。
+						</p>
+						<p>
+							7.设备发生遗失，保管人员要承担相应责任。设备遗失后，须立即报主管的中心主任，并由设备管理员办理有关手续。
+						</p>
+						<p>
+							8.实验消耗品、维修设备所需部件的购买，须由管理人提出书面清单，经中心主任同意后，报学院统一采购。设备购入后，由中心统一下拨使用。
+						</p>
+						
+						<h4 style="text-align: center; margin-top:20px">
+							<p><strong>（二）仪器设备报废制度</strong></p>
+						</h4>
+						<p>
+							为进一步加强学校仪器设备管理，规范报废仪器设备工作程序，最大限度地利用设备资源，防止资产流失，根据《青海民族大学仪器设备管理办法》，结合我院实际，特制定本制度。
+						</p>
+						<p>
+							1、实验室各仪器设备必须严加保管，认真登记造册，列入学校固定财产。
+						</p>
+						<p>
+							2、各实验室管理人员要负责管好、用好仪器设备，延长其使用年限。要做好日常管理、维护工作，保证仪器设备处于完好可用状态。出现故障时应及时修复，并做好维护、维修记录。
+						</p>
+						<p>
+							3、仪器设备确已丧失效能，无法修复或修理费用过高，设备老化，失去使用价值，满足《行政事业单位常用固定资产使用年限表》的，应先报备学院相关领导，经学院领导同意后，由资产管理员向校实验室与设备管理中心申请报废，并认真填写《青海民族大学仪器设备报损报废申请表》，根据《青海民族大学仪器设备报废流程》，报备实验室与设备管理中心。
+						</p>
+						<p>
+							4、对淘汰拟报废的仪器设备在申报审批的过程中要妥善保管，待学校按相关程序批准报废后，及时配合学校实验室与设备管理中心回收。
+						</p>
+					</div>
+				</div>
+			 </div>
+		</div>
+		
+		<footer class="footer text-center" style="margin-top:10px">
+		    <div class="container" style="height: 110px;padding:5px; background-color:#1f4563;color:#ffffff">
+				<div class="row">
+					<h5>电话：0971-8804033</h5>
+				</div>
+				<div class="row" >
+					<h5>地址：青海省西宁市城东区博雅路青海民族大学工科校区工学主楼</h5>
+				</div>
+				<div class="row" >
+					<h5>邮编：810007</h5>
+				</div>
+			</div>
+			<div class="container">
+				<h5>Copyright @ XX-XX XXXX</h5>
+			</div>
+		</footer>
+		
+		
+	</body>
+</html>
+
+
