@@ -4,6 +4,159 @@
 		<meta charset="utf-8">
 		<title></title>
 	</head>
+	
+	<style>
+		.container{
+			padding: 5px;
+		}
+		.navbar{
+			padding-left: 20px ;
+		    margin-bottom: 0px;
+		    border-radius: 5px;
+			text-align: center;
+		} 
+		.navbar .nav >li{
+			width: 110px;
+		}
+	
+		.navbar .nav >li >a:visited{
+		    color: aqua;
+		    background-color: #000000;
+		}
+		.navbar .nav > li > a:hover {
+		    color: aqua;
+		    background-color: #1d4b7a;
+		}
+		
+		.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+		    background-color: transparent;
+		}
+		
+		.navbtn{
+			margin-top: 4px;
+			color: #707070;;
+			height:transparent;
+			width: 55px;
+			align-content: center;
+			background-color: transparent;
+			font-size: smaller;
+		}
+		
+		.group-title{
+			background-color: #e1e1e1; 
+			margin:0px
+		}
+		.label{
+			padding-left:15px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			height: transparent;
+			background-color:#1d4564;
+			font-size: 15px;
+			border-radius: 20;
+			margin-left:-15px;
+		}
+		.more{
+			color: #707070;
+		}
+		
+		a{text-decoration:none;color: #000000;}
+		
+		a:hover{text-decoration:none;color: #000000;} 
+		
+	</style>
+	
 	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>	国家民委办人工智能应用技术实验室</h1>
+				<small>The key Laboratory of Artificial Intelligence Application Technology of State Ethnic Affairs Comission</small>
+			</div>
+			
+			<!-- 导航栏 -->
+			<nav class="navbar navbar-default" role="navigation" style="background-color: #1d4564;>
+				
+				<div class="container-fluid"> 
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+									<!-- 首页 -->
+							<li><a href="index.html" style="color: #ffffff">网站首页</a></li>
+							<!-- 实验室概况 -->
+							<li class="dropdown">
+								<a href="lab/lab-introduce.html" data-toggle="dropdown" style="color: #ffffff">
+									实验室概况
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="lab/lab-introduce.html" style="padding: 4px 10px 4px 10px;">实验室介绍</a></li>
+									<li><a href="lab/scholarship-committee.html" style="padding: 4px 10px 4px 10px;">学术委员会</a></li>
+									<li><a href="lab/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室领导</a></li>
+									<li><a href="lab/research-content.html" style="padding: 4px 10px 4px 10px;">研究内容</a></li>
+									<li><a href="lab/research-group.html" style="padding: 4px 10px 4px 10px;">研究队伍</a></li>
+									<li><a href="lab/organize.html" style="padding: 4px 10px 4px 10px;">组织机构</a></li>
+								</ul>
+							</li>
+							<li><a href="yjfx/research-direction.html" style="color: #ffffff">研究方向</a></li>
+							<li><a href="project/project.html" style="color: #ffffff">承担项目</a></li>
+							<li class="dropdown">
+								<a href="kycg/competion-result.html" data-toggle="dropdown" style="color: #ffffff">
+									科研成果
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="kycg/competion-result.html" style="padding: 4px 10px 4px 10px;">竞赛获奖</a></li>
+									<li><a href="kycg/research-result.html" style="padding: 4px 10px 4px 10px;">科研获奖</a></li>
+								</ul>
+							</li>
+							<!-- 学术交流 -->
+							<li class="dropdown">
+								<a href="xsjl/academic-conferences.html" data-toggle="dropdown" style="color: #ffffff">
+									学术交流
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="xsjl/academic-conferences.html" style="padding: 4px 10px 4px 10px;">学术会议</a></li>
+									<li><a href="xsjl/academic-reports.html" style="padding: 4px 10px 4px 10px;">学术报告</a></li>
+									
+								</ul>
+							</li>
+							<li><a href="kfjj/open-fund.html" style="color: #ffffff">开放基金</a></li>
+							<!-- 人才培养 -->
+							<li class="dropdown">
+								<a href="rcpy/teacher.html" data-toggle="dropdown" style="color: #ffffff">
+									人才培养
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="rcpy/teacher.html" style="padding: 4px 10px 4px 10px;">导师名单</a></li>
+								</ul>
+							</li>
+							<!-- 规章制度 -->
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" style="color: #ffffff">
+									规章制度
+								</a>
+								<ul class="dropdown-menu" style="min-width: unset">
+									<li><a href="gzzd/lab-manager.html" style="padding: 4px 10px 4px 10px;">实验室守则</a></li>
+									<li><a href="gzzd/safe-manager.html" style="padding: 4px 10px 4px 10px;">安全制度</a></li>
+									<li><a href="gzzd/device-manager.html" style="padding: 4px 10px 4px 10px;">仪器设备管理制度</a></li>
+									<li><a href="gzzd/state-manager.html" style="padding: 4px 10px 4px 10px;">平台管理制度</a></li>
+								</ul>
+							</li>
+							<li><a href="download/download.html" style="color: #ffffff">下载中心</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</nav>
+					
+		</div>
 	</body>
 </html>
